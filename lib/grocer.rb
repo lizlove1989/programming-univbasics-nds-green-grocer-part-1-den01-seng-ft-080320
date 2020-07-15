@@ -6,8 +6,17 @@ def find_item_by_name_in_collection(name, collection)
 end
 
 def consolidate_cart(cart)
-  cart.each { |item| item[:count] = 0}
-  cart.each { |item| item[:count] += 1 }
+  # cart.each { |item| item[:count] = 0}
+  # cart.each { |item| item[:count] += 1 }
+  
+  cart.each { |item| 
+    if !item[:count]
+      item[:count] = 1
+    else 
+      item[:count] += 1
+    end
+  }
+  
   cart
 end
 
