@@ -7,11 +7,12 @@ end
 
 def consolidate_cart(cart) 
   cart.map {|obj| 
-    if obj[:count]
-      obj[:count] += 1
-    else 
-      obj[:count] = 1
-    end
+    puts obj[:count]
+    # if obj[:count]
+    #   obj[:count] += 1
+    # else 
+    #   obj[:count] = 1
+    # end
   }
 end
 
