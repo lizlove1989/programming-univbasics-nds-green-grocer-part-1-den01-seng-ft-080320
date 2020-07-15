@@ -6,15 +6,14 @@ def find_item_by_name_in_collection(name, collection)
 end
 
 def consolidate_cart(cart) 
-  cart.map {|obj| 
-    obj[:count] = 1
-    
-    #   if obj[:count]
-    #     obj[:count] += 1
-    #   else 
-    #     obj[:count] = 1
-    #   end
-  }
+  puts cart[0].count = 1
+  # cart.map {|obj| 
+  #   if obj[:count]
+  #     obj[:count] += 1
+  #   else 
+  #     obj[:count] = 1
+  #   end
+  # }
 end
 
   
