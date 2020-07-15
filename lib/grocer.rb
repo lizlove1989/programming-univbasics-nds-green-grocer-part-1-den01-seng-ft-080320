@@ -12,7 +12,7 @@ def consolidate_cart(cart)
     else 
       obj[:count] = 1
     end
- 
+  }
 end
 
   
