@@ -7,7 +7,7 @@ end
 
 def consolidate_cart(cart)
   cart.each { |item| item[:count] = 0}
-  puts cart
+  
 end
 
   
